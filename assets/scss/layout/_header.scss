@@ -1,0 +1,16 @@
+// 避免汙染到其他區塊的 navbar 設定，所以最外層多包了 .layout-navbar
+.layout-navbar {
+  width: 296px;
+
+  .nav-link {
+    border-left: 4px solid transparent;
+
+    &:hover {
+      background-color: $gray-400;
+    }
+  }
+
+  .nav-link.active {
+    border-color: $success;
+  }
+}

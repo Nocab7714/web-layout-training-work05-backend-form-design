@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ANSWER | Admin</title>
+    <!-- Head Icon -->
+    <link rel="icon" href="../assets/images/icon.png" type="image/x-icon" />
+    <!-- Google Material Symbols -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <div class="d-flex">
+      <%- include('./layout/header', {page:'admin'}); -%>
+      <main class="content">
+        <header>
+          <nav class="navbar py-8">
+            <div class="container-fluid align-items-center">
+              <div class="d-flex flex-row align-items-center">
+                <h1 class="navbar-brand fs-4 text-dark fw-bold py-0 me-10">
+                  Admin
+                </h1>
+                <!-- Button trigger modal - Add New Admin -->
+                <div class="nav-item">
+                  <a
+                    class="nav-link dropdown-toggle fw-bold hover-success"
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#addNewAdminModal"
+                  >
+                    <span
+                      class="material-symbols-outlined text-success align-bottom me-2"
+                    >
+                      add
+                    </span>
+                    Add New Admin
+                  </a>
+                </div>
+              </div>
+              <div class="d-flex flex-row">
+                <ul class="navbar-nav flex-row flex-nowrap">
+                  <ul class="list-unstyled d-flex">
+                    <li class="nav-item me-7">
+                      <a class="nav-link py-0 hover-success" href="#">
+                        <span class="material-symbols-outlined"> search </span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link py-0 hover-success" href="#"
+                        ><span class="material-symbols-outlined">
+                          notifications_active
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <div class="container mx-0">
+          <div class="mb-12">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th class="py-0" scope="col">
+                    <a href="#" class="d-flex align-items-center hover-success">
+                      ID<span
+                        class="material-symbols-outlined fs-6 text-success"
+                      >
+                        arrow_downward
+                      </span></a
+                    >
+                  </th>
+                  <th class="py-0" scope="col">Name</th>
+                  <th class="py-0" scope="col">Email</th>
+                  <th class="py-0" scope="col">Verified</th>
+                  <th class="py-0" scope="col"></th>
+                </tr>
+              </thead>
+              <tbody class="table-group-divider">
+                <tr>
+                  <th scope="row" class="fw-medium">#1</th>
+                  <td>Emir Wicks</td>
+                  <td>emir.wicks@mail.com</td>
+                  <td>Yes</td>
+                  <td>
+                    <!-- Button trigger modal - View Modal -->
+                    <a
+                      href="#"
+                      class="hover-success me-6"
+                      data-bs-toggle="modal"
+                      data-bs-target="#viewModal"
+                      ><span class="material-symbols-outlined align-middle">
+                        visibility
+                      </span></a
+                    >
+                    <!-- Button trigger modal - Edit Admin Modal -->
+                    <a
+                      href="#"
+                      class="hover-success"
+                      data-bs-toggle="modal"
+                      data-bs-target="#editAdminModal"
+                      ><span class="material-symbols-outlined align-middle">
+                        edit
+                      </span></a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-medium">#2</th>
+                  <td>Zaina Goldsmith</td>
+                  <td>zaina.goldsmith@mail.com</td>
+                  <td>Yes</td>
+                  <td>
+                    <!-- Button trigger modal - View Modal -->
+                    <a
+                      href="#"
+                      class="hover-success me-6"
+                      data-bs-toggle="modal"
+                      data-bs-target="#viewModal"
+                      ><span class="material-symbols-outlined align-middle">
+                        visibility
+                      </span></a
+                    >
+                    <!-- Button trigger modal - Edit Admin Modal -->
+                    <a
+                      href="#"
+                      class="hover-success"
+                      data-bs-toggle="modal"
+                      data-bs-target="#editAdminModal"
+                      ><span class="material-symbols-outlined align-middle">
+                        edit
+                      </span></a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-medium">#3</th>
+                  <td>Mahima Lopez</td>
+                  <td>mahima.lopez@mail.com</td>
+                  <td>Yes</td>
+                  <td>
+                    <!-- Button trigger modal - View Modal -->
+                    <a
+                      href="#"
+                      class="hover-success me-6"
+                      data-bs-toggle="modal"
+                      data-bs-target="#viewModal"
+                      ><span class="material-symbols-outlined align-middle">
+                        visibility
+                      </span></a
+                    >
+                    <!-- Button trigger modal - Edit Admin Modal -->
+                    <a
+                      href="#"
+                      class="hover-success"
+                      data-bs-toggle="modal"
+                      data-bs-target="#editAdminModal"
+                      ><span class="material-symbols-outlined align-middle">
+                        edit
+                      </span></a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-medium">#4</th>
+                  <td>Pharrell Murray</td>
+                  <td>pharrell.murray@mail.com</td>
+                  <td>Yes</td>
+                  <td>
+                    <!-- Button trigger modal - View Modal -->
+                    <a
+                      href="#"
+                      class="hover-success me-6"
+                      data-bs-toggle="modal"
+                      data-bs-target="#viewModal"
+                      ><span class="material-symbols-outlined align-middle">
+                        visibility
+                      </span></a
+                    >
+                    <!-- Button trigger modal - Edit Admin Modal -->
+                    <a
+                      href="#"
+                      class="hover-success"
+                      data-bs-toggle="modal"
+                      data-bs-target="#editAdminModal"
+                      ><span class="material-symbols-outlined align-middle">
+                        edit
+                      </span></a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-medium">#5</th>
+                  <td>Annika Mcbride</td>
+                  <td>annika.mcbride@mail.com</td>
+                  <td>Yes</td>
+                  <td>
+                    <!-- Button trigger modal - View Modal -->
+                    <a
+                      href="#"
+                      class="hover-success me-6"
+                      data-bs-toggle="modal"
+                      data-bs-target="#viewModal"
+                      ><span class="material-symbols-outlined align-middle">
+                        visibility
+                      </span></a
+                    >
+                    <!-- Button trigger modal - Edit Admin Modal -->
+                    <a
+                      href="#"
+                      class="hover-success"
+                      data-bs-toggle="modal"
+                      data-bs-target="#editAdminModal"
+                      ><span class="material-symbols-outlined align-middle">
+                        edit
+                      </span></a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-medium">#6</th>
+                  <td>Fatimah Clark</td>
+                  <td>fatimah.clark@mail.com</td>
+                  <td>Yes</td>
+                  <td>
+                    <!-- Button trigger modal - View Modal -->
+                    <a
+                      href="#"
+                      class="hover-success me-6"
+                      data-bs-toggle="modal"
+                      data-bs-target="#viewModal"
+                      ><span class="material-symbols-outlined align-middle">
+                        visibility
+                      </span></a
+                    >
+                    <!-- Button trigger modal - Edit Admin Modal -->
+                    <a
+                      href="#"
+                      class="hover-success"
+                      data-bs-toggle="modal"
+                      data-bs-target="#editAdminModal"
+                      ><span class="material-symbols-outlined align-middle">
+                        edit
+                      </span></a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-medium">#7</th>
+                  <td>Klaudia Rhodes</td>
+                  <td>klaudia.rhodes@mail.com</td>
+                  <td>Yes</td>
+                  <td>
+                    <!-- Button trigger modal - View Modal -->
+                    <a
+                      href="#"
+                      class="hover-success me-6"
+                      data-bs-toggle="modal"
+                      data-bs-target="#viewModal"
+                      ><span class="material-symbols-outlined align-middle">
+                        visibility
+                      </span></a
+                    >
+                    <!-- Button trigger modal - Edit Admin Modal -->
+                    <a
+                      href="#"
+                      class="hover-success"
+                      data-bs-toggle="modal"
+                      data-bs-target="#editAdminModal"
+                      ><span class="material-symbols-outlined align-middle">
+                        edit
+                      </span></a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-medium">#1</th>
+                  <td>Tillie Lucero</td>
+                  <td>tillie.lucero@mail.com</td>
+                  <td>Yes</td>
+                  <td>
+                    <!-- Button trigger modal - View Modal -->
+                    <a
+                      href="#"
+                      class="hover-success me-6"
+                      data-bs-toggle="modal"
+                      data-bs-target="#viewModal"
+                      ><span class="material-symbols-outlined align-middle">
+                        visibility
+                      </span></a
+                    >
+                    <!-- Button trigger modal - Edit Admin Modal -->
+                    <a
+                      href="#"
+                      class="hover-success"
+                      data-bs-toggle="modal"
+                      data-bs-target="#editAdminModal"
+                      ><span class="material-symbols-outlined align-middle">
+                        edit
+                      </span></a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-medium">#1</th>
+                  <td>Sabrina Stephenson</td>
+                  <td>sabrina.stephenson@mail.com</td>
+                  <td>Yes</td>
+                  <td>
+                    <!-- Button trigger modal - View Modal -->
+                    <a
+                      href="#"
+                      class="hover-success me-6"
+                      data-bs-toggle="modal"
+                      data-bs-target="#viewModal"
+                      ><span class="material-symbols-outlined align-middle">
+                        visibility
+                      </span></a
+                    >
+                    <!-- Button trigger modal - Edit Admin Modal -->
+                    <a
+                      href="#"
+                      class="hover-success"
+                      data-bs-toggle="modal"
+                      data-bs-target="#editAdminModal"
+                      ><span class="material-symbols-outlined align-middle">
+                        edit
+                      </span></a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-medium">#1</th>
+                  <td>Annie Smith</td>
+                  <td>annie.smith@mail.com</td>
+                  <td>Yes</td>
+                  <td>
+                    <!-- Button trigger modal - View Modal -->
+                    <a
+                      href="#"
+                      class="hover-success me-6"
+                      data-bs-toggle="modal"
+                      data-bs-target="#viewModal"
+                      ><span class="material-symbols-outlined align-middle">
+                        visibility
+                      </span></a
+                    >
+                    <!-- Button trigger modal - Edit Admin Modal -->
+                    <a
+                      href="#"
+                      class="hover-success"
+                      data-bs-toggle="modal"
+                      data-bs-target="#editAdminModal"
+                      ><span class="material-symbols-outlined align-middle">
+                        edit
+                      </span></a
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <nav aria-label="Page navigation">
+              <ul class="pagination justify-content-end">
+                <li class="page-item">
+                  <a class="page-link px-2"
+                    ><span
+                      class="material-symbols-outlined fs-6 align-middle text-success hover-light"
+                    >
+                      arrow_back_ios
+                    </span></a
+                  >
+                </li>
+                <li class="page-item">
+                  <a class="page-link active" href="#">1</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link px-2" href="#"
+                    ><span
+                      class="material-symbols-outlined fs-6 align-middle text-success hover-light"
+                    >
+                      arrow_forward_ios
+                    </span></a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- Modal - Add New Admin -->
+    <div
+      class="modal fade"
+      id="addNewAdminModal"
+      tabindex="-1"
+      aria-labelledby="addNewAdminModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-scrollable">
+        <form class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5 fw-bold" id="addNewAdminModal">
+              Add New Admin
+            </h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body pt-0">
+            <div class="mb-6">
+              <h3 class="fs-5 fw-bold mb-3">Account</h3>
+              <div class="mb-3">
+                <label for="AddAdminName" class="form-label fs-7">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="AddAdminName"
+                  placeholder=""
+                />
+              </div>
+              <div>
+                <label for="AddAdminEmail" class="form-label fs-7">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="AddAdminEmail"
+                  placeholder=""
+                />
+              </div>
+            </div>
+            <div
+              class="border-top mb-6"
+              style="border-color: var(--bs-gray-400)"
+            ></div>
+            <div class="mb-6">
+              <h3 class="fs-5 fw-bold mb-4">Verification</h3>
+              <div
+                class="d-flex justify-content-between align-items-center mb-4"
+              >
+                <div
+                  class="fw-bold d-flex justify-content-between align-items-center"
+                >
+                  <span class="material-symbols-outlined me-2 text-danger">
+                    warning </span
+                  >Verified
+                </div>
+                <time class="fs-7 d-none"></time>
+              </div>
+              <button
+                type="button"
+                class="btn btn-outline-secondary text-success w-100 fw-bold py-4 hover-light"
+                style="border-color: var(--bs-gray-400)"
+              >
+                Send Verification Mail
+              </button>
+            </div>
+            <div
+              class="border-top mb-6"
+              style="border-color: var(--bs-gray-400)"
+            ></div>
+            <div class="mb-6">
+              <h3 class="fs-5 fw-bold mb-4">Access Level</h3>
+              <select class="form-select text-gray" aria-label="chose">
+                <option selected disabled>-Choose access level-</option>
+                <option value="Admin">Admin</option>
+                <option value="Customer">Customer</option>
+              </select>
+            </div>
+            <div
+              class="border-top mb-6"
+              style="border-color: var(--bs-gray-400)"
+            ></div>
+            <div class="mb-6">
+              <h3 class="fs-5 fw-bold mb-4">Custom Access</h3>
+              <div class="form-check mb-4">
+                addNewAdmin
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Lecture"
+                  id="addNewAdminCheckLecture"
+                />
+                <label class="form-check-label" for="addNewAdminCheckLecture">
+                  Lecture
+                </label>
+              </div>
+              <div class="form-check mb-4">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Coupon"
+                  id="addNewAdminCheckCoupon"
+                />
+                <label class="form-check-label" for="addNewAdminCheckCoupon">
+                  Coupon
+                </label>
+              </div>
+              <div class="form-check mb-4">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Message"
+                  id="addNewAdminCheckMessage"
+                />
+                <label class="form-check-label" for="addNewAdminCheckMessage">
+                  Message
+                </label>
+              </div>
+              <div class="form-check mb-4">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Setting"
+                  id="addNewAdminCheckSetting"
+                />
+                <label class="form-check-label" for="addNewAdminCheckSetting">
+                  Setting
+                </label>
+              </div>
+              <div class="form-check mb-4">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="TaskMenu"
+                  id="addNewAdminCheckTaskMenu"
+                />
+                <label class="form-check-label" for="addNewAdminCheckTaskMenu">
+                  Task Menu
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-success fw-bold px-8 me-4"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button type="submit" class="btn btn-success fw-bold px-8">
+              Add
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Modal - View -->
+    <div
+      class="modal fade"
+      id="viewModal"
+      tabindex="-1"
+      aria-labelledby="viewModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="d-flex">
+              <div class="flex-shrink-0">
+                <img
+                  src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week5/emir.jpeg"
+                  alt="穿著白色毛衣躺在大片葉子中的半身女孩照"
+                  class="object-fit-cover"
+                  height="141"
+                  width="141"
+                />
+              </div>
+              <div class="flex-grow-1 ms-6">
+                <div class="d-flex justify-content-between mb-2">
+                  <div>
+                    <p class="fs-6 mb-2">#1</p>
+                    <p class="fs-6">Admin</p>
+                    <h2 class="fs-4 fw-bold mb-2">Emir Wicks</h2>
+                    <span class="fs-7" style="color: var(--bs-gray-600)"
+                      >emir.wicks@mail.com</span
+                    >
+                  </div>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="accordion accordion-flush" id="accordionAdmin">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        <span
+                          class="fs-7 p-1"
+                          style="background-color: var(--bs-gray-100)"
+                          >Verified</span
+                        >
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseOne"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body mt-8">
+                        <div class="d-flex justify-content-between">
+                          <button
+                            class="btn btn-outline-danger fw-bold px-8"
+                            type="button"
+                          >
+                            Deactivate
+                          </button>
+                          <button
+                            class="btn btn-success fw-bold px-8"
+                            type="button"
+                          >
+                            Edit
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal - Edit New Admin -->
+    <div
+      class="modal fade"
+      id="editAdminModal"
+      tabindex="-1"
+      aria-labelledby="editAdminModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-scrollable">
+        <form class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5 fw-bold" id="editAdminModal">
+              Edit Admin
+            </h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body pt-0">
+            <div class="mb-6">
+              <h3 class="fs-5 fw-bold mb-3">Account</h3>
+              <div class="mb-3">
+                <label for="editAdminName" class="form-label fs-7">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="editAdminName"
+                  value="Emir Wicks"
+                  disabled
+                />
+              </div>
+              <div>
+                <label for="editAdminEmail" class="form-label fs-7"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="editAdminEmail"
+                  value="emir.wicks@mail.com"
+                  disabled
+                />
+              </div>
+            </div>
+            <div
+              class="border-top mb-6"
+              style="border-color: var(--bs-gray-400)"
+            ></div>
+            <div class="mb-6">
+              <h3 class="fs-5 fw-bold mb-4">Verification</h3>
+              <div
+                class="d-flex justify-content-between align-items-center mb-4"
+              >
+                <div
+                  class="fw-bold d-flex justify-content-between align-items-center"
+                >
+                  <span class="material-symbols-outlined me-2 text-success">
+                    check_circle </span
+                  >Verified
+                </div>
+                <time class="fs-7">2020/4/12</time>
+              </div>
+              <button
+                type="button"
+                class="btn btn-outline-secondary w-100 fw-bold py-4"
+                disabled
+              >
+                Send Verification Mail
+              </button>
+            </div>
+            <div
+              class="border-top mb-6"
+              style="border-color: var(--bs-gray-400)"
+            ></div>
+            <div class="mb-6">
+              <h3 class="fs-5 fw-bold mb-4">Access Level</h3>
+              <select class="form-select" aria-label="chose">
+                <option value="Admin" selected>Admin</option>
+                <option value="Customer">Customer</option>
+              </select>
+            </div>
+            <div
+              class="border-top mb-6"
+              style="border-color: var(--bs-gray-400)"
+            ></div>
+            <div class="mb-6">
+              <h3 class="fs-5 fw-bold mb-4">Custom Access</h3>
+              <div class="form-check mb-4">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Lecture"
+                  id="editAdminCheckLecture"
+                />
+                <label class="form-check-label" for="editAdminCheckLecture">
+                  Lecture
+                </label>
+              </div>
+              <div class="form-check mb-4">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Coupon"
+                  id="editAdminCheckCoupon"
+                />
+                <label class="form-check-label" for="editAdminCheckCoupon">
+                  Coupon
+                </label>
+              </div>
+              <div class="form-check mb-4">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Message"
+                  id="editAdminCheckMessage"
+                />
+                <label class="form-check-label" for="editAdminCheckMessage">
+                  Message
+                </label>
+              </div>
+              <div class="form-check mb-4">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Setting"
+                  id="editAdminCheckSetting"
+                />
+                <label class="form-check-label" for="editAdminCheckSetting">
+                  Setting
+                </label>
+              </div>
+              <div class="form-check mb-4">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="TaskMenu"
+                  id="editAdminCheckTaskMenu"
+                />
+                <label class="form-check-label" for="editAdminCheckTaskMenu">
+                  Task Menu
+                </label>
+              </div>
+            </div>
+            <div
+              class="border-top mb-6"
+              style="border-color: var(--bs-gray-400)"
+            ></div>
+            <div>
+              <h3 class="fs-5 fw-bold mb-4">Deactivate Account</h3>
+              <div class="mb-4 text-danger">
+                <div class="d-flex align-items-center">
+                  <span class="material-symbols-outlined me-2"> warning </span
+                  >This cannot be undone!
+                </div>
+              </div>
+              <button
+                type="button"
+                class="btn btn-outline-danger w-100 fw-bold py-4"
+              >
+                Deactivate This Account
+              </button>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-success fw-bold px-8 me-4"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button type="submit" class="btn btn-success fw-bold px-8">
+              Update
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

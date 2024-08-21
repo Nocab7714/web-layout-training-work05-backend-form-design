@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ANSWER | Assignment</title>
+    <!-- Head Icon -->
+    <link rel="icon" href="../assets/images/icon.png" type="image/x-icon" />
+    <!-- Google Material Symbols -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <div class="d-flex">
+      <%- include('./layout/header',{page:'assignment'}); -%>
+      <main class="content">
+        <header>
+          <nav class="navbar py-8">
+            <div class="container-fluid align-items-center">
+              <div class="d-flex flex-row align-items-center">
+                <h1 class="navbar-brand fs-4 text-dark fw-bold py-0 me-10">
+                  Assignment
+                </h1>
+                <div class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle fw-bold"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    All Courses<span
+                      class="ps-2 material-symbols-outlined text-success align-middle"
+                    >
+                      keyboard_arrow_down
+                    </span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">courses01</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">courses02</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">courses03</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="d-flex flex-row">
+                <ul class="navbar-nav flex-row flex-nowrap">
+                  <ul class="list-unstyled d-flex">
+                    <li class="nav-item me-7">
+                      <a class="nav-link py-0 hover-success" href="#">
+                        <span class="material-symbols-outlined"> search </span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link py-0 hover-success" href="#"
+                        ><span class="material-symbols-outlined">
+                          notifications_active
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <div class="container mx-0">
+          <div class="mt-3">
+            <div class="d-flex justify-content-between align-items-center mb-1">
+              <div class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle fw-bold"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  All(4)<span
+                    class="ps-2 material-symbols-outlined text-success align-middle"
+                  >
+                    keyboard_arrow_down
+                  </span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">item01</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">item02</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">item03</a>
+                  </li>
+                </ul>
+              </div>
+              <small class="fs-8" style="color: var(--bs-gray-600)"
+                >2 comments</small
+              >
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <div class="list-group" id="list-tab" role="tablist">
+                  <a
+                    class="list-group-item list-group-item-action active"
+                    id="list-assignment01-list"
+                    data-bs-toggle="list"
+                    href="#list-assignment01"
+                    role="tab"
+                    aria-controls="list-assignment01"
+                  >
+                    <div class="d-flex w-100 justify-content-between mb-1">
+                      <h3 class="fs-8">Chapter Assignment 2</h3>
+                      <small class="fs-8">3 days ago</small>
+                    </div>
+                    <div class="d-flex w-100 justify-content-between">
+                      <h3 class="mb-0 fs-6 fw-bold">Please check this file…</h3>
+                      <small class="fs-8" style="color: var(--bs-gray-600)"
+                        >Emily Wang</small
+                      >
+                    </div>
+                  </a>
+                  <a
+                    class="list-group-item list-group-item-action"
+                    id="list-assignment02-list"
+                    data-bs-toggle="list"
+                    href="#list-assignment02"
+                    role="tab"
+                    aria-controls="list-assignment02"
+                    ><div class="d-flex w-100 justify-content-between mb-1">
+                      <h3 class="fs-8">Chapter Assignment 1</h3>
+                      <small class="fs-8">12 hrs ago</small>
+                    </div>
+                    <div class="d-flex w-100 justify-content-between">
+                      <h3 class="mb-0 fs-6 fw-bold">My Homework</h3>
+                      <small class="fs-8" style="color: var(--bs-gray-600)"
+                        >David Xu</small
+                      >
+                    </div>
+                  </a>
+                  <a
+                    class="list-group-item list-group-item-action"
+                    id="list-assignment03-list"
+                    data-bs-toggle="list"
+                    href="#list-assignment03"
+                    role="tab"
+                    aria-controls="list-assignment03"
+                    ><div class="d-flex w-100 justify-content-between mb-1">
+                      <h3 class="fs-8">Final Assignment</h3>
+                      <small class="fs-8">18 hrs ago</small>
+                    </div>
+                    <div class="d-flex w-100 justify-content-between">
+                      <h3 class="mb-0 fs-6 fw-bold">
+                        Have a problem with this…
+                      </h3>
+                      <small class="fs-8" style="color: var(--bs-gray-600)"
+                        >Tony Wei</small
+                      >
+                    </div></a
+                  >
+                  <a
+                    class="list-group-item list-group-item-action"
+                    id="list-assignment04-list"
+                    data-bs-toggle="list"
+                    href="#list-assignment04"
+                    role="tab"
+                    aria-controls="list-assignment04"
+                    ><div class="d-flex w-100 justify-content-between mb-1">
+                      <h3 class="fs-8">Final Assignment</h3>
+                      <small class="fs-8">19 hrs ago</small>
+                    </div>
+                    <div class="d-flex w-100 justify-content-between">
+                      <h3 class="mb-0 fs-6 fw-bold">Did I do it right?</h3>
+                      <small class="fs-8" style="color: var(--bs-gray-600)"
+                        >Christina Lin</small
+                      >
+                    </div></a
+                  >
+                </div>
+              </div>
+              <div class="col-8">
+                <div class="tab-content" id="nav-tabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="list-assignment01"
+                    role="tabpanel"
+                    aria-labelledby="list-assignment01-list"
+                  >
+                    <div class="card mb-4">
+                      <div
+                        class="card-header d-flex justify-content-between align-items-center"
+                      >
+                        <div>
+                          <span class="fs-8"
+                            >Chapter Assignment 2 / HTML&CSS</span
+                          >
+                          <h3 class="fs-6 fw-bold">
+                            Please check this file for me, thanks!
+                          </h3>
+                        </div>
+                        <a href="#">
+                          <span
+                            class="material-symbols-outlined align-bottom hover-success"
+                          >
+                            more_vert
+                          </span>
+                        </a>
+                      </div>
+                      <div class="card-body">
+                        <div class="d-flex flex-column">
+                          <div class="d-flex flex-row mb-4">
+                            <div class="flex-shrink-0">
+                              <img
+                                src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week5/emilywang.jpeg"
+                                alt="一個女人穿著灰色連衣長裙並且手上拿著一束花的側身照"
+                                class="rounded-circle object-fit-cover"
+                                width="40"
+                                height="40"
+                              />
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                              <h2 class="text-dark fw-bold fs-6">Emily Wang</h2>
+                              <p
+                                class="fs-8 mb-4"
+                                style="color: var(--bs-gray-600)"
+                              >
+                                <time> 10:38 AM </time>
+                                (4 hours ago)
+                              </p>
+                              <p class="card-text fs-7 mb-3">
+                                Hi Teacher, the attached file is my homework of
+                                chapter 2. And here comes a question: Why in the
+                                following code the height of the div is bigger
+                                than the height of the <code>img</code> ? There
+                                is a gap below the image, but it doesn’t seems
+                                to be a padding/margin. What is the gap or extra
+                                space below image?
+                              </p>
+                              <a
+                                href="index.html"
+                                class="btn btn-light text-dark fw-bold mb-4"
+                                style="border-color: var(--bs-gray-400)"
+                                download
+                              >
+                                <span
+                                  class="material-symbols-outlined align-middle me-2"
+                                >
+                                  attach_file
+                                </span>
+                                HW-2-David.zip</a
+                              >
+
+                              <div
+                                class="border"
+                                style="border-color: var(--bs-gray-400)"
+                              ></div>
+                            </div>
+                          </div>
+
+                          <div class="d-flex flex-row">
+                            <div class="flex-shrink-0">
+                              <img
+                                src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week5/andychen.jpeg"
+                                alt="一個戴眼鏡穿著深色毛衣的男人看像側邊的半身照"
+                                class="rounded-circle object-fit-cover"
+                                width="40"
+                                height="40"
+                              />
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                              <div class="d-flex justify-content-between">
+                                <div>
+                                  <h2 class="text-dark fw-bold fs-6">
+                                    Andy Chen (You)
+                                  </h2>
+                                  <p
+                                    class="fs-8 mb-4"
+                                    style="color: var(--bs-gray-600)"
+                                  >
+                                    <time>13:24 AM</time>
+                                    (1 hours ago)
+                                  </p>
+                                </div>
+                                <div>
+                                  <a href="#" class="me-6 hover-success"
+                                    ><span
+                                      class="material-symbols-outlined icon-unfilled"
+                                    >
+                                      star_rate
+                                    </span></a
+                                  >
+                                  <a href="#" class="hover-success"
+                                    ><span class="material-symbols-outlined">
+                                      edit
+                                    </span></a
+                                  >
+                                </div>
+                              </div>
+                              <div class="card-text fs-7 mb-3">
+                                Hi David, by default, an image is rendered
+                                inline, like a letter so it sits on the same
+                                line that a, b, c and d sit on. There is space
+                                below that line for the descenders you find on
+                                letters like g, j, p and q. <br /><br />
+                                You can:
+                                <br /><br />
+                                <ul>
+                                  <li>
+                                    adjust the
+                                    <code>vertical-align</code>
+                                    &nbsp;&nbsp;&nbsp;of the image to position
+                                    it elsewhere (e.g. the
+                                    <code>middle</code> le &nbsp;&nbsp;&nbsp;)
+                                    or
+                                  </li>
+                                  <li>
+                                    change the <code>display</code> &nbsp;so it
+                                    isn’t inline.
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center position-relative"
+                    >
+                      <div>
+                        <a href="#" class="me-6 hover-success"
+                          ><span class="material-symbols-outlined align-bottom">
+                            chevron_left
+                          </span></a
+                        >
+                        <a href="#" class="hover-success"
+                          ><span class="material-symbols-outlined align-bottom">
+                            chevron_right
+                          </span></a
+                        >
+                      </div>
+                      <div>
+                        <button
+                          class="btn btn-outline-success fw-bold px-6 me-4"
+                          type="button"
+                        >
+                          Mark as read
+                        </button>
+                        <button
+                          class="btn btn-success fw-bold px-6"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseExample"
+                          aria-expanded="false"
+                          aria-controls="collapseExample"
+                        >
+                          Reply
+                        </button>
+                      </div>
+                      <div
+                        class="collapse position-absolute end-0 bottom-0 w-100"
+                        id="collapseExample"
+                      >
+                        <div class="card">
+                          <div class="card-header px-6 py-4">
+                            <ul
+                              class="d-flex list-unstyled align-items-center mb-0"
+                            >
+                              <li class="me-6">
+                                <div class="dropdown">
+                                  <a
+                                    class="nav-link dropdown-toggle fw-bold"
+                                    href="#"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                  >
+                                    Body Text<span
+                                      class="ps-2 material-symbols-outlined align-middle"
+                                    >
+                                      arrow_drop_down
+                                    </span>
+                                  </a>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >PingFang SC</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >STHeiti</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Yuanti SC</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li class="me-6">
+                                <a href="#"
+                                  ><span
+                                    class="material-symbols-outlined align-middle"
+                                  >
+                                    format_bold
+                                  </span></a
+                                >
+                              </li>
+                              <li class="me-6">
+                                <a href="#"
+                                  ><span
+                                    class="material-symbols-outlined align-middle"
+                                  >
+                                    format_italic
+                                  </span></a
+                                >
+                              </li>
+                              <li class="me-6">
+                                <a href="#">
+                                  <span
+                                    class="material-symbols-outlined align-middle"
+                                  >
+                                    format_list_bulleted
+                                  </span></a
+                                >
+                              </li>
+                              <li class="me-6">
+                                <a href="#"
+                                  ><span
+                                    class="material-symbols-outlined align-middle"
+                                  >
+                                    format_list_numbered
+                                  </span></a
+                                >
+                              </li>
+                              <li class="me-6">
+                                <a href="#">
+                                  <span
+                                    class="material-symbols-outlined align-middle"
+                                  >
+                                    image
+                                  </span></a
+                                >
+                              </li>
+                              <li class="me-6">
+                                <a href="#"
+                                  ><span
+                                    class="material-symbols-outlined align-middle"
+                                  >
+                                    link
+                                  </span></a
+                                >
+                              </li>
+                              <li class="me-6">
+                                <a href="#"
+                                  ><span
+                                    class="material-symbols-outlined align-middle"
+                                  >
+                                    code
+                                  </span></a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="card-body">
+                            <label
+                              for="replyTextarea01"
+                              class="form-label d-none"
+                              >Example textarea</label
+                            >
+                            <textarea
+                              class="replyTextarea form-control p-0 rounded-0"
+                              id="replyTextarea01"
+                              placeholder="Reply an answer…"
+                              rows="7"
+                              style="border: none; resize: none"
+                            ></textarea>
+                            <div class="d-flex justify-content-end">
+                              <button
+                                class="btn btn-outline-success fw-bold px-6 me-4"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample"
+                                aria-expanded="false"
+                                aria-controls="collapseExample"
+                              >
+                                Cancel
+                              </button>
+                              <button
+                                class="btn btn-success fw-bold px-6"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample"
+                                aria-expanded="false"
+                                aria-controls="collapseExample"
+                              >
+                                Reply
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="list-assignment02"
+                    role="tabpanel"
+                    aria-labelledby="list-assignment02-list"
+                  >
+                    2
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="list-assignment03"
+                    role="tabpanel"
+                    aria-labelledby="list-assignment03-list"
+                  >
+                    3
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="list-assignment04"
+                    role="tabpanel"
+                    aria-labelledby="list-assignment04-list"
+                  >
+                    4
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

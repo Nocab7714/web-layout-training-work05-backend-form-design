@@ -1,0 +1,8 @@
+.replyTextarea::placeholder{
+  color: $gray-400 ;
+}
+
+.content{
+  width: calc(100% - 296px);
+  margin-left: auto;
+}

@@ -1,0 +1,13 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "./base/font";
+@import './utils/variables';
+@import "../../node_modules/bootstrap";
+@import "./base/base";
+@import "./base/tools";
+
+@import './layout/header';
+@import './layout/footer';
+
+@import './pages/index';
+@import './pages/admin';
+

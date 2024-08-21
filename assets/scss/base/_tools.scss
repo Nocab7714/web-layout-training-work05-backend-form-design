@@ -1,0 +1,11 @@
+.hover-success{
+  &:hover{
+    color: $success;
+  }
+}
+
+.hover-light{
+  &:hover{
+    color: $light !important;
+  }
+}
